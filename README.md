@@ -1,52 +1,41 @@
-# 📊 NovaRetail+: Optimización de Estrategia mediante Análisis A/B
+# 🛍️ NovaRetail+: Optimización de Conversión mediante Análisis A/B
 
-[cite_start]Este repositorio contiene el análisis estadístico de un experimento A/B realizado para **NovaRetail+**, con el objetivo de validar cambios en la plataforma que impacten la **tasa de conversión** y el **valor económico (gasto)** por usuario[cite: 1, 4, 9].
+![NovaRetail Logo](https://img.shields.io/badge/Business-Analysis-blue) ![Python](https://img.shields.io/badge/Python-3.9+-green) ![SQL](https://img.shields.io/badge/SQL-Data_Extraction-blue) ![Statistics](https://img.shields.io/badge/Statistics-Hypothesis_Testing-orange)
 
-## 📝 Descripción del Proyecto
-[cite_start]Como analista de datos, el objetivo fue determinar si una nueva versión de la landing page (Versión B) presentaba diferencias significativas frente al control (Versión A)[cite: 3, 4, 30]. [cite_start]El análisis integra la extracción de datos, validación estadística y la generación de insights estratégicos para stakeholders[cite: 5, 22].
+## 🎯 Objetivo del Proyecto
+El objetivo principal de este proyecto es validar el impacto de cambios estratégicos en la plataforma de **NovaRetail+**. Mediante el uso de analítica avanzada y pruebas de hipótesis, buscamos determinar si las modificaciones en el diseño o flujo de usuario generan un incremento real en la tasa de conversión y en el valor económico por cliente, eliminando la incertidumbre en la toma de decisiones.
 
-## 🛠️ Tecnologías y Herramientas
-* **Python**: Análisis de datos y computación estadística.
-* **SQL**: Extracción y filtrado de grandes volúmenes de datos.
-* **Pandas & NumPy**: Limpieza y manipulación de datasets.
-* **SciPy & Statsmodels**: Ejecución de pruebas de hipótesis (t-test, z-test, Chi-cuadrado).
-* **Seaborn & Matplotlib**: Visualización de datos de impacto empresarial.
+## 📊 Datasets Utilizados
+Para este análisis se integraron fuentes de datos transaccionales y de comportamiento:
+* **`retail_events.csv`**: Registro detallado de interacciones de usuarios y rutas de navegación.
+* **`orders_retail.csv`**: Historial de compras, montos invertidos y fechas de transacción.
+* **`user_segments.csv`**: Información demográfica y clasificación de lealtad de los clientes.
 
----
+## 🛠️ Metodología de Análisis (CIPO)
+El proyecto se ejecutó siguiendo mi metodología de consultoría estratégica:
 
-## 🚀 Metodología CIPO (Conocer, Identificar, Proponer, Optimizar)
-Apliqué mi metodología estratégica para asegurar que el análisis aporte claridad al liderazgo:
+1.  **Conocer:** Exploración profunda de los datos (EDA) para asegurar la integridad de la información y validar que los grupos del experimento estén balanceados.
+2.  **Identificar:** Aplicación de pruebas de hipótesis (t-test para gasto y z-test para conversión) para detectar diferencias significativas que no sean producto del azar.
+3.  **Proponer:** Traducción de hallazgos estadísticos en recomendaciones ejecutivas orientadas a mejorar la rentabilidad.
+4.  **Optimizar:** Rediseño de la inversión en canales de tráfico basándose en su eficiencia relativa detectada mediante pruebas de Chi-cuadrado.
 
-### 1. **C - Conocer (Data Discovery & Quality)**
-* [cite_start]Validación de la integridad del dataset: 9 columnas incluyendo `user_id`, `landing`, `converted` y `gasto`[cite: 25].
-* [cite_start]Limpieza y formateo: Aseguré que la variable `gasto` solo tuviera valores mayores a cero cuando `converted = 1`[cite: 34].
-
-### 2. **I - Identificar (Análisis Estadístico)**
-* [cite_start]**Prueba t de Student**: Comparación del gasto promedio por usuario convertido para medir el valor económico[cite: 11, 19].
-* [cite_start]**Prueba Z para Proporciones**: Evaluación de la tasa de conversión entre la página A y la página B[cite: 12, 19].
-* [cite_start]**Prueba Chi-cuadrado**: Análisis de asociación entre la conversión y variables categóricas como `traffic_source` y `user_type`[cite: 13, 14, 38].
-
-### 3. **P - Proponer (Insights Estratégicos)**
-* [cite_start]Identificación de la página ganadora basada en la **significancia estadística (p-value)** y no solo en el promedio visual[cite: 42, 50].
-* [cite_start]Traducción de resultados técnicos a recomendaciones de negocio accionables[cite: 58].
-
-### 4. **O - Optimizar (Business Impact)**
-* [cite_start]Recomendaciones sobre la segmentación de usuarios (Nuevos vs. Recurrentes)[cite: 14].
-* [cite_start]Optimización del presupuesto de marketing basado en los canales de tráfico más efectivos[cite: 13, 45].
-
----
-
-## 📈 Hallazgos Destacados
-* [cite_start]**Calidad del Experimento**: El experimento se validó como balanceado entre las versiones A y B[cite: 39].
-* [cite_start]**Conversión vs Gasto**: Se analizaron efectos diferenciales para evitar sesgos al incluir usuarios que no convirtieron[cite: 37].
-* [cite_start]**Visualización**: Generación de gráficos de barras apiladas para interpretar la efectividad relativa de cada categoría[cite: 21, 57].
+## 📈 Hallazgos Clave
+* **Impacto en Gasto:** Identificación de si el ticket promedio aumentó significativamente tras las modificaciones.
+* **Canales de Alta Eficiencia:** Detección de fuentes de tráfico con tasas de conversión superiores que ameritan mayor inversión.
+* **Segmentación:** Descubrimiento de comportamientos diferenciados entre usuarios nuevos y recurrentes para personalizar la oferta.
 
 
+
+## 🚀 Cómo Ejecutar el Proyecto
+Para reproducir este análisis:
+1. Clona el repositorio: `git clone https://github.com/tu-usuario/novaretail-ab-testing.git`
+2. Asegúrate de tener instaladas las librerías: `pandas`, `scipy`, `statsmodels`, `seaborn`.
+3. Ejecuta el notebook `NovaRetail_Analysis.ipynb` de forma secuencial.
 
 ---
 
 ## 🤝 Conecta conmigo
-Si estás buscando transformar la incertidumbre de tu negocio en decisiones basadas en datos:
+Si buscas transformar datos en decisiones estratégicas bajo el método CIPO:
 * **LinkedIn**: [linkedin.com/in/alejandronieto-cipo-mentor-consultor](https://linkedin.com/in/alejandronieto-cipo-mentor-consultor)
 * **Sitio Web**: [alejandronietoalvarez.com](https://alejandronietoalvarez.com)
-* **Substack**: [CIPO para líderes](https://alejandronieto.substack.com/)
+* **Substack**: [CI PO demos avanzar](https://alejandronieto.substack.com/)

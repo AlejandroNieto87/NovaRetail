@@ -49,4 +49,4 @@ Apliqué mi metodología estratégica para asegurar que el análisis aporte clar
 Si estás buscando transformar la incertidumbre de tu negocio en decisiones basadas en datos:
 * **LinkedIn**: [linkedin.com/in/alejandronieto-cipo-mentor-consultor](https://linkedin.com/in/alejandronieto-cipo-mentor-consultor)
 * **Sitio Web**: [alejandronietoalvarez.com](https://alejandronietoalvarez.com)
-* **Substack**: [CI PO demos avanzar](https://alejandronieto.substack.com/)
+* **Substack**: [CIPO para líderes](https://alejandronieto.substack.com/)
